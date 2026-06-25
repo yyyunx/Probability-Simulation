@@ -2,14 +2,13 @@
 
 ## Problem
 
-Route-1 departs every hour.
-Route-2 follows an exponential inter-arrival time.
+Simulate the bus waiting time problem and verify the probabilities that Route-1 departs before Route-2.
 
-This simulation verifies
+## Theory
 
-- (a) P(Route-1 departs first)
-- (b) P(Route-1 departs first | Route-2 departs within one hour)
+- (a) P(W₁ < W₂) = 1 − e⁻¹
+- (b) P(W₁ < W₂ | W₂ ≤ 1) = (e − 2)/(e − 1)
 
-## Result
+## Files
 
-Simulation and theoretical values are compared.
+- `q1.py` : Python simulation
